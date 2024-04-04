@@ -4886,11 +4886,12 @@ body.search-is-visible .s-header__search-inner {
 /* entry featured media
  */
 .entry__media {
-    margin-bottom : var(--vspace-2);
+    margin-bottom : var(--vspace-3);
 }
 
 .entry__media figure {
     margin : 0;
+    size: 100px;
 }
 
 .entry__media img {
