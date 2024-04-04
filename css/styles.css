@@ -5367,3 +5367,11 @@ body.search-is-visible .s-header__search-inner {
         padding-top : var(--vspace-1);
     }
 }
+
+.logo-link {
+    display: inline-block; /* Ensure the link takes up only necessary space */
+}
+
+.logo-img {
+    margin-top: 15px;
+}
