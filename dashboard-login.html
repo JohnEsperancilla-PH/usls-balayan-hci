@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Balayan</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header id="masthead" class="s-header">
+
+            <div class="s-header__branding">
+                <p class="site-title">
+                    <a href="index.html" rel="home" class="logo-link">
+                        <img src="images/usls-balayan-logo.png" width="200" alt="USLS Balayan Logo" class="logo-img">
+                    </a>
+                </p>
+            </div>            
+            
+
+            <div class="row s-header__navigation">
+
+                <nav class="s-header__nav-wrap">
+    
+                    <h3 class="s-header__nav-heading">Navigate to</h3>
+    
+                    <ul class="s-header__nav">
+                        
+                    </ul> <!-- end s-header__nav -->
+
+                </nav> <!-- end s-header__nav-wrap -->
+    
+            </div> <!-- end s-header__navigation -->
+
+        </header> <!-- end s-header -->
+
+
+       <!-- # site-content ================================================== -->
+<section id="content" class="s-content">
+    <!-- hero -->
+    <div class="hero">
+        <div class="hero__slider swiper-container">
+            <div class="swiper-wrapper">
+                <article class="hero__slide swiper-slide">
+                    <div class="hero__entry-image" style="background-image: url(images/usls-photo.png);"></div>
+                    <div class="hero__entry-text">
+                        <div class="hero__entry-text-inner">
+                            <div class="hero__entry-meta">
+                                <span class="cat-links">
+                                    <a>Login</a>
+                                </span>
+                            </div>
+                            <h2 class="hero__entry-title">
+                                <a>USLS Balayan</a>
+                            </h2>
+                            <form id="login-form">
+                                <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" required>
+                                <input type="password" name="PASSWORD" id="mce-PASSWORD" class="u-fullwidth text-center" placeholder="Your Password" required>
+                                <input type="submit" name="submit" value="Login" class="btn--small btn--primary u-fullwidth">
+                                <p class="forgot-password">
+                                    <a href="#0">Forgot Password?</a>
+                                </p>
+                                <script>
+                                    const form = document.getElementById('login-form');
+                                    form.addEventListener('submit', (e) => {
+                                        e.preventDefault();
+                                        const email = document.getElementById('mce-EMAIL').value;
+                                        const password = document.getElementById('mce-PASSWORD').value;
+                                        if (email === 'balayan@usls.edu.ph' && password === 'balayanuslsadmin') {
+                                            window.location.href = 'index.html';
+                                        } else {
+                                            alert('Invalid email or password');
+                                        }
+                                    });
+                                </script>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- swiper-wrapper -->
+        </div>
+        <!-- end hero -->
+    </section>
+    <!-- end s-content -->      
+           
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 10.25L12 4.75L6.75 10.25"/>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19.25V5.75"/>
+                    </svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+
+        </footer><!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
