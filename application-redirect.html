@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Balayan</title>
+    <title>Application Sent!</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -90,32 +90,14 @@
                         <div class="hero__entry-text-inner">
                             <div class="hero__entry-meta">
                                 <span class="cat-links">
-                                    <a>Login</a>
+                                    <a>Application Sent!</a>
                                 </span>
                             </div>
-                            <h2 class="hero__entry-title">
-                                <a>USLS Balayan</a>
-                            </h2>
                             <form id="login-form">
-                                <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" required>
-                                <input type="password" name="PASSWORD" id="mce-PASSWORD" class="u-fullwidth text-center" placeholder="Your Password" required>
-                                <input type="submit" name="submit" value="Login" class="btn--small btn--primary u-fullwidth">
-                                <p class="forgot-password">
-                                    <a href="#0">Forgot Password?</a>
+                                <p class="hero__entry-desc">
+                                    Thank you for considering to be a Balayan Volunteer! We will be sending you a letter via email about your application and interview.
                                 </p>
-                                <script>
-                                    const form = document.getElementById('login-form');
-                                    form.addEventListener('submit', (e) => {
-                                        e.preventDefault();
-                                        const email = document.getElementById('mce-EMAIL').value;
-                                        const password = document.getElementById('mce-PASSWORD').value;
-                                        if (email === 'balayan@usls.edu.ph' && password === 'balayanuslsadmin') {
-                                            window.location.href = 'dashboard.html';
-                                        } else {
-                                            alert('Invalid email or password');
-                                        }
-                                    });
-                                </script>
+                                <a class="hero__more-link" href="index.html">Return Home</a>
                             </form>
                         </div>
                     </div>
